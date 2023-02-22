@@ -1,0 +1,174 @@
+
+body {
+  font-family: 'proxima-nova', sans-serif;
+  margin: 0;
+  width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Left Side */
+.left-side{
+    display: flex;
+    background-color: rgb(58, 54, 54);
+    width: 30%;
+    color: white;
+    flex-direction: column;
+}
+
+.left-content{
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.container-foto-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.foto-profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.heading-left{
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    letter-spacing: 0.1rem;
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: row;
+}
+
+.icons{
+    display: flex;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.text-left{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.box-light-grey{
+    background-color: lightgrey;
+}
+
+.box-grey{
+    background-color: grey;
+}
+
+
+/* Right Side */
+.right-side{
+    padding: 50px;
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-pribadi{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content-title{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.heading-right{
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    letter-spacing: 0.1rem;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.icons-right{
+    margin-top: 0;
+    font-size: 20px;
+}
+
+hr .line-right{
+    border: 3px;
+}
+
+.right-content-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.right-content-name{
+    width: 50%;
+    margin-right:20px;
+}
+
+.right-content-description{
+    font-weight:200;
+    width: 100%;
+}
+
+.button-demo{
+    margin-top: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color:  rgb(58, 54, 54);
+}
+
+.button-demo:hover{
+    width: 75px;
+    height: 35px;
+    transition: .1s;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 910px) {
+    .foto-profile{
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-me{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .icons{
+        padding: 0;
+    }
+
+    .text-left{
+        font-size: small;
+        overflow-wrap: break-word;
+    }
+
+    .right-side{
+        margin-left: 0px;
+    }
+
+    .info-pribadi{
+        font-size: .5rem;
+    }
+
+    .right-content-content{
+        font-size: small;
+    }
+}
